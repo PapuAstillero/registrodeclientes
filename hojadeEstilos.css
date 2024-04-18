@@ -1,0 +1,110 @@
+.formmain {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 100px;
+}
+
+.mainform {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 80px;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(28, 185, 220), rgb(21, 170, 200), #1d82da, #186cb1, #124d8f);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background:    51%, #7db9e8 100% */
+}
+
+form input {
+    border-radius: 10px;
+    border: 1px solid rgba(240, 255, 255, 0.692);
+    background-color: rgba(212, 211, 211, 0.471);
+    width: 200px;
+    text-align: left;
+    padding: 10px;
+}
+
+.cell {
+    border-radius: 10px;
+    border: 1px solid rgba(240, 255, 255, 0.692);
+    background-color: rgba(212, 211, 211, 0.471);
+    width: 75px;
+    text-align: left;
+    padding: 10px;
+}
+
+#cell {
+    width: 125px;
+}
+
+
+form input::placeholder {
+    color: black;
+    text-align: left;
+}
+
+
+#clienttype {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid rgba(240, 255, 255, 0.692);
+    background-color: rgba(212, 211, 211, 0.471);
+    width: 215px;
+
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid rgba(240, 255, 255, 0.692);
+    background-color: rgba(212, 211, 211, 0.641);
+    text-align: center;
+    padding: 10px;
+    ;
+}
+
+button a {
+    color: black;
+}
+
+.divclientes {
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+
+.divclientes a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+
+.divclientes2 a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+    text-align: left;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+hr {
+    width: 40em;
+}
+
+#opt {
+    border: 1px solid rgba(240, 255, 255, 0.692);
+    background-color: rgba(212, 211, 211, 0.471);
+    color: black;
+
+}
+
+#formdiv {
+    display: inline-block;
+}

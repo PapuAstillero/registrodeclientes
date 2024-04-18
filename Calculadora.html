@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Conversión de Moneda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Conversión de Moneda</h1>
+        <input type="number" id="amount" placeholder="Ingresa la cantidad">
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="ARSIMP">ARSIMP</option>
+            <option value="ARS">ARS</option>
+        </select>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="ARSIMP">ARSIMP</option>
+            <option value="ARS">ARS</option>
+        </select>
+        <button onclick="convertCurrency()">Convertir</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function convertCurrency() {
+            const amount = parseFloat(document.getElementById("amount").value);
+            const fromCurrency = document.getElementById("fromCurrency").value;
+            const toCurrency = document.getElementById("toCurrency").value;
+
+            // Reemplaza con tasas de cambio reales
+            const exchangeRates = {
+                USD: 1.0,
+                ARSIMP: 1372.0,
+                ARS: 857.50,
+            };
+
+            const convertedAmount = amount * exchangeRates[toCurrency] / exchangeRates[fromCurrency];
+            document.getElementById("result").textContent = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+        }
+    </script>
+</body>
+
+</html>

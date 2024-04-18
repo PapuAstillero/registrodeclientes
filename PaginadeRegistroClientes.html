@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de cliente</title>
+    <link rel="stylesheet" href="hojadeEstilos.css">
+    <meta name="authorization"
+        content="Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDMzNzEzOTQsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJyYW1vcy5yYW1pcm8uYWxlamFuZHJvQGdtYWkuY29tIn0.VlIvfkEdeNx83OsZzMyE_2qnYmLFkZ8Ae1GEhtvJezB-iMhBhXSeysFZDyFrF-HkNk8oD6jFPnk6M40rSkvRTA">
+
+</head>
+
+<body>
+    <nav class="divclientes2"> <a href="Paginainicial.html">Volver</a></nav>
+    <main class="formmain">
+        <h1>Registro </h1>
+        <hr>
+        <br> <br>
+        <form id="registrocliente" action="">
+            <div id="formdiv">
+                <label for="name">Nombre completo</label> <br>
+                <input type="text" name="name" id="name" placeholder="Escriba su nombre completo" maxlength="100"
+                    required>
+                <br><br> <br>
+                <label for="Dni"> N° de Documento</label> <br>
+                <input type="number" name="Documento" id="Dni" placeholder="Introduzca su número de Documento"
+                    min="1000000" max="85000000" required maxlength="8"> <br> <br> <br>
+                <label for=" Direccion">Dirección</label> <br>
+                <input type="text" name="Direccion" id="Direccion" placeholder="Introduzca su Dirección" required>
+                <br><br>
+                <br>
+                <label for="Cell">Número de telefono</label><br>
+                <select id="code" class="cell" name="codigoPais">
+                    <option id="opt" value="+54">Argentina (+54)</option>
+                    <option id="opt" value="+33">Francia (+33)</option>
+                    <option id="opt" value="+1">Estados Unidos (+1)</option>
+                    <option id="opt" value="+44">Reino Unido (+44)</option>
+                    <option id="opt" value="+49">Alemania (+49)</option>
+                    <option id="opt" value="+81">Japón (+81)</option>
+                    <option id="opt" value="+34">España (+34)</option>
+                    <option id="opt" value="+39">Italia (+39)</option>
+                    <option id="opt" value="+86">China (+86)</option>
+                    <option id="opt" value="+52">México (+52)</option>
+                    <option id="opt" value="+7">Rusia (+7)</option>
+                    <option id="opt" value="+61">Australia (+61)</option>
+                    <option id="opt" value="+91">India (+91)</option>
+                    <option id="opt" value="+351">Portugal (+351)</option>
+                    <option id="opt" value="+31">Países Bajos (+31)</option>
+                    <option id="opt" value="+41">Suiza (+41)</option>
+                    <option id="opt" value="+46">Suecia (+46)</option>
+                    <option id="opt" value="+82">Corea del Sur (+82)</option>
+                    <option id="opt" value="+30">Grecia (+30)</option>
+                    <option id="opt" value="+55">Brasil (+55)</option>
+                    <!-- Agrega más códigos de países aquí -->
+                </select>
+                <input type="tel" name="telefono" id="cell" class="cell" placeholder="Introduzca su número de telefono"
+                    required>
+                <br><br> <br>
+                <label for="mail">Correo electrónico</label> <br>
+                <input type="email" name="correo" id="mail" placeholder="ejmplo@dominio.com" required> <br><br> <br>
+            </div>
+            <div id="formdiv"></div>
+            <div id="formdiv"></div>
+            <div id="formdiv">
+                <label for="prof">Profesión</label> <br>
+                <input type="text" name="profesion" id="prof" placeholder="Introduzca su Profesión" required> <br> <br>
+                <br>
+                <label for="hobby"> Sobre usted</label> <br>
+                <input type="text" name="hobbies" id="hobby" placeholder="Hable sobre su hobby" required> <br> <br> <br>
+                <label id="cuadro" for="refer"> Referencia</label> <br>
+                <input type="text" name="Referencia" id="refer" placeholder="Escriba su Referencia" maxlength="200"
+                    required>
+                <br>
+                <br> <br>
+                <label for="clienttype"> Tipo de Cliente</label> <br>
+                <select name="tipodecliente" id="clienttype" required> Por favor seleccione su tipo de cliente
+                    <option id="opt" value="">Por favor Selecione su tipo de Cliente</option>
+                    <option id="opt" value="Ref">Referido</option>
+                    <option id="opt" value="Mark">Marketing</option>
+                </select> <br> <br> <br>
+                <label for="Value"> Valor de compra</label> <br>
+                <input type="number" name="precio" id="value" placeholder="$xxx.xxx.xxx" required> <br><br> <br>
+            </div> <br> <br>
+            <button style="text-align: center;"> Registrar </button>
+
+
+        </form>
+
+
+
+    </main>
+    <script src="api.js"></script>
+</body>
+
+</html>
